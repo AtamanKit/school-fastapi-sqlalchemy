@@ -22,7 +22,7 @@ class UserSchema(UserSchemaBase):
     id: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 
 @router.get("/get-user", response_model=UserSchema)

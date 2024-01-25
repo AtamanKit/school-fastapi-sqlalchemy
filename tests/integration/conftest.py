@@ -57,4 +57,3 @@ async def session_override(app, connection_test):
             yield session
 
     app.dependency_overrides[get_db] = get_db_override
-
